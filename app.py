@@ -13,15 +13,7 @@ bin_str = get_base64('ap2.jpg')
 
 st.markdown(f"""
     <style>
-/* 1. Force Wide Layout and fix scrolling */
-    .block-container {{
-        padding-top: 1rem !important;
-        max-width: 95% !important;
-    }}
-
-
-    
-    /* 2. Background Image with Blur and Fit */
+    /* 1. Background Image with Blur and Fit */
     .stApp {{
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                           url("data:image/png;base64,{bin_str}");
@@ -30,7 +22,16 @@ st.markdown(f"""
         background-attachment: fixed;
     }}
 
-   /* 3. Enhanced Glassmorphism Cards */
+    
+    /* 2. Force Wide Layout and fix scrolling */
+    .block-container {{
+        padding-top: 1rem !important;
+        max-width: 95% !important;
+    }}
+
+
+
+    /* 3. Enhanced Glassmorphism Cards */
     div[data-testid="stVerticalBlockBorderControl"] {{
         background: rgba(255, 255, 255, 0.1) !important;
         backdrop-filter: blur(15px) !important;
@@ -42,8 +43,9 @@ st.markdown(f"""
         flex-direction: column;
         justify-content: center;
     }}
+
     
-    /* 4. Fixing Phase Labels (Phase A, B, C) visibility */
+   /* 3. Fixing Phase Labels (Phase A, B, C) visibility */
     h4 {{
         color: #ffffff !important;
         font-size: 1.8rem !important;
@@ -52,7 +54,18 @@ st.markdown(f"""
         margin-bottom: 10px !important;
     }}
 
-    /* 5. Boosting Feature Headings and Text */
+
+    /* 4. Font Sizes and Visibility */
+    h1 {{ font-size: 4rem !important; color: white !important; font-weight: 800 !important; }}
+    h3 {{ font-size: 2.5rem !important; color: #ffffff !important; }}
+    p, .stCaption {{ font-size: 1.2rem !important; color: #f0f0f0 !important; }}
+    
+    /* Ensuring the sidebar stays professional */
+    [data-testid="stSidebar"] {{
+        background-color: rgba(15, 32, 39, 0.8) !important;
+        backdrop-filter: blur(10px);
+    }}
+      /* 5. Boosting Feature Headings and Text */
     h3 {{ 
         font-size: 2.2rem !important; 
         color: white !important;
@@ -72,8 +85,6 @@ st.markdown(f"""
     }}
     </style>
     """, unsafe_allow_html=True)
-
-
 
 
 
