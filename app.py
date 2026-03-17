@@ -52,10 +52,7 @@ st.markdown(f"""
 
 
 
-# Add a professional banner in the sidebar
-with st.sidebar:
-    st.divider()
-    st.markdown("### 🛠️ Status: **Ready for Field Test**")
+
 
 
 # 2. Hero Section
