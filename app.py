@@ -1,5 +1,6 @@
 import base64
 import streamlit as st
+st.set_page_config(layout="wide")
 
 # Function to encode the image
 def get_base64(bin_file):
@@ -12,40 +13,32 @@ bin_str = get_base64('ap2.jpg')
 
 st.markdown(f"""
     <style>
-    /* 1. Background Image with Blur and Fit */
+    /* 1. Remove unnecessary padding at the top */
+    .block-container {{
+        padding-top: 2rem !important;
+        padding-bottom: 0rem !important;
+    }}
+
+    /* 2. Adjust background to be fixed and center */
     .stApp {{
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
                           url("data:image/png;base64,{bin_str}");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
     }}
 
-    /* 2. Glassmorphism Effect for Cards */
-    div[data-testid="stVerticalBlockBorderControl"] {{
-        background: rgba(255, 255, 255, 0.1) !important;
-        backdrop-filter: blur(15px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 20px !important;
-        padding: 25px !important;
-        transition: transform 0.3s ease;
-    }}
-    
-    /* 3. Hover effect to make them "Pop" */
-    div[data-testid="stVerticalBlockBorderControl"]:hover {{
-        transform: translateY(-5px);
-        border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    }}
+    /* 3. Scale down fonts for laptop screens */
+    h1 {{ font-size: 2.8rem !important; margin-bottom: 0px !important; }}
+    h3 {{ font-size: 1.8rem !important; margin-top: 10px !important; }}
+    p, .stCaption {{ font-size: 1rem !important; line-height: 1.2 !important; }}
 
-    /* 4. Font Sizes and Visibility */
-    h1 {{ font-size: 4rem !important; color: white !important; font-weight: 800 !important; }}
-    h3 {{ font-size: 2.5rem !important; color: #ffffff !important; }}
-    p, .stCaption {{ font-size: 1.2rem !important; color: #f0f0f0 !important; }}
-    
-    /* Ensuring the sidebar stays professional */
-    [data-testid="stSidebar"] {{
-        background-color: rgba(15, 32, 39, 0.8) !important;
-        backdrop-filter: blur(10px);
+    /* 4. Optimize Cards for Desktop */
+    div[data-testid="stVerticalBlockBorderControl"] {{
+        background: rgba(255, 255, 255, 0.08) !important;
+        backdrop-filter: blur(12px) !important;
+        padding: 15px !important; /* Smaller padding */
+        min-height: 180px; /* Ensures all cards are same height */
     }}
     </style>
     """, unsafe_allow_html=True)
