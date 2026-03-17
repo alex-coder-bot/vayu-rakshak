@@ -12,7 +12,7 @@ def get_base64(bin_file):
     return base64.b64encode(data).decode()
 
 # Replace 'background.jpg' with your actual filename
-bin_str = get_base64('ap.jpeg') 
+bin_str = get_base64('ap2.jpg') 
 
 st.markdown(f"""
     <style>
