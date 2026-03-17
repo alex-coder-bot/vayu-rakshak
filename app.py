@@ -43,13 +43,7 @@ st.markdown(f"""
         justify-content: center;
     }}
     
-    /* 3. Hover effect to make them "Pop" */
-    div[data-testid="stVerticalBlockBorderControl"]:hover {{
-        transform: translateY(-5px);
-        border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    }}
-
-   /* 3. Fixing Phase Labels (Phase A, B, C) visibility */
+    /* 4. Fixing Phase Labels (Phase A, B, C) visibility */
     h4 {{
         color: #ffffff !important;
         font-size: 1.8rem !important;
@@ -58,7 +52,7 @@ st.markdown(f"""
         margin-bottom: 10px !important;
     }}
 
-    /* 4. Boosting Feature Headings and Text */
+    /* 5. Boosting Feature Headings and Text */
     h3 {{ 
         font-size: 2.2rem !important; 
         color: white !important;
@@ -71,13 +65,14 @@ st.markdown(f"""
         line-height: 1.4 !important;
     }}
 
-    /* 5. Making the 'Status' warnings more readable */
+    /* 6. Making the 'Status' warnings more readable */
     .stAlert p {{
         font-size: 1.2rem !important;
         font-weight: 600 !important;
     }}
     </style>
     """, unsafe_allow_html=True)
+
 
 
 
