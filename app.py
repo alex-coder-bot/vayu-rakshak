@@ -3,6 +3,30 @@ from PIL import Image  # Capital PIL, even though the library is called Pillow
 # 1. Page Configuration
 st.set_page_config(page_title="Vayu Rakshak | AI Aviation Safety", page_icon="🛡️", layout="wide")
 
+# Custom CSS for that "Popping" effect
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f5f7f9;
+    }
+    .stButton>button {
+        width: 100%;
+        border-radius: 20px;
+        height: 3em;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# Add a professional banner in the sidebar
+with st.sidebar:
+    st.image("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=300", caption="Vayu Rakshak v1.0")
+    st.divider()
+    st.markdown("### 🛠️ Status: **Ready for Field Test**")
+
+
 # 2. Hero Section
 st.title("🛡️ Vayu Rakshak")
 st.subheader("The 'Proof-of-Fix' Protocol for Zero-Error Aviation Maintenance")
