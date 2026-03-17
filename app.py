@@ -10,6 +10,13 @@ st.markdown("""
     .stApp {
         background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
         color: white;
+background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                          url("https://fr.pinterest.com/pin/817755244831793516/");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+        
     }
     
     /* Making cards semi-transparent for a "Glassmorphism" effect */
