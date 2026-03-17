@@ -8,23 +8,27 @@ st.title("🛡️ Vayu Rakshak")
 st.subheader("The 'Proof-of-Fix' Protocol for Zero-Error Aviation Maintenance")
 st.markdown("---")
 
-# 3. Features Grid (The "Landing Page" feel)
+# 3. Features Grid with "Sutra" Card Aesthetics
+st.markdown("### 🚀 Core Capabilities")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image("https://img.icons8.com/fluency/96/artificial-intelligence.png")
-    st.write("**Closed-Loop Verification**")
-    st.caption("AI-driven gates that lock safety reports until visual confirmation of mechanical integrity is achieved.")
+    with st.container(border=True):
+        st.write("### 🤖") # Big Emoji instead of broken link
+        st.write("**Closed-Loop Verification**")
+        st.caption("AI-driven gates that lock safety reports until visual confirmation is achieved.")
 
 with col2:
-    st.image("https://img.icons8.com/fluency/96/smartphone-cpu.png")
-    st.write("**Edge-Inference Ready**")
-    st.caption("Mobile-first architecture designed for hangar environments with low connectivity.")
+    with st.container(border=True):
+        st.write("### 📱")
+        st.write("**Edge-Inference Ready**")
+        st.caption("Mobile-first architecture designed for offline hangar environments.")
 
 with col3:
-    st.image("https://img.icons8.com/fluency/96/file-configuration.png")
-    st.write("**Modular Protocols**")
-    st.caption("Instant injection of Boeing/Airbus safety blueprints via our JSON-template engine.")
+    with st.container(border=True):
+        st.write("### ⚙️")
+        st.write("**Modular Protocols**")
+        st.caption("Instant injection of Boeing/Airbus blueprints via JSON-template engine.")
 
 # 4. The Workflow Preview (The "Proof-of-Fix" logic)
 st.markdown("### 🛠️ The Safety Workflow")
