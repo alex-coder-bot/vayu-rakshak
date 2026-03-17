@@ -4,14 +4,24 @@ from PIL import Image  # Capital PIL, even though the library is called Pillow
 st.set_page_config(page_title="Vayu Rakshak | AI Aviation Safety", page_icon="🛡️", layout="wide")
 
 # Custom CSS for that "Popping" effect
-st.markdown("""
+import base64
+
+def get_base64(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# Replace 'background.jpg' with your actual filename
+bin_str = get_base64('ap.jpg') 
+
+st.markdown(f"""
     <style>
-    .stApp {
+    .stApp {{
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                          url("https://fr.pinterest.com/pin/817755244831793516/");
+                          url("data:image/png;base64,{bin_str}");
         background-size: cover;
         background-attachment: fixed;
-    }
+    }}
     </style>
     """, unsafe_allow_html=True)
 # Add a professional banner in the sidebar
