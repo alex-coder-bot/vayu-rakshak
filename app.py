@@ -8,7 +8,7 @@ def get_base64(bin_file):
     return base64.b64encode(data).decode()
 
 # Use your actual filename here
-bin_str = get_base64('image_10d07d.jpg') 
+bin_str = get_base64('ap2.jpg') 
 
 st.markdown(f"""
     <style>
