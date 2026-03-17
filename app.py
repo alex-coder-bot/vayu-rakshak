@@ -13,13 +13,24 @@ bin_str = get_base64('ap2.jpg')
 
 st.markdown(f"""
     <style>
-    /* 1. Force Wide Layout and fix scrolling */
+/* 1. Force Wide Layout and fix scrolling */
     .block-container {{
         padding-top: 1rem !important;
         max-width: 95% !important;
     }}
 
-    /* 2. Enhanced Glassmorphism Cards */
+
+    
+    /* 2. Background Image with Blur and Fit */
+    .stApp {{
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                          url("data:image/png;base64,{bin_str}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+
+   /* 3. Enhanced Glassmorphism Cards */
     div[data-testid="stVerticalBlockBorderControl"] {{
         background: rgba(255, 255, 255, 0.1) !important;
         backdrop-filter: blur(15px) !important;
@@ -31,8 +42,14 @@ st.markdown(f"""
         flex-direction: column;
         justify-content: center;
     }}
+    
+    /* 3. Hover effect to make them "Pop" */
+    div[data-testid="stVerticalBlockBorderControl"]:hover {{
+        transform: translateY(-5px);
+        border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    }}
 
-    /* 3. Fixing Phase Labels (Phase A, B, C) visibility */
+   /* 3. Fixing Phase Labels (Phase A, B, C) visibility */
     h4 {{
         color: #ffffff !important;
         font-size: 1.8rem !important;
@@ -61,6 +78,8 @@ st.markdown(f"""
     }}
     </style>
     """, unsafe_allow_html=True)
+
+
 
 
 
