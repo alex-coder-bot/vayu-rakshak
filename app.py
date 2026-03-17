@@ -29,12 +29,22 @@ with col3:
 # 4. The Workflow Preview (The "Proof-of-Fix" logic)
 st.markdown("### 🛠️ The Safety Workflow")
 st.info("Our proprietary 3-Phase verification process:")
-st.steps([
-    "**Phase A: Detection** - AI identifies sub-millimeter configuration errors.",
-    "**Phase B: Intervention** - Mechanic performs and logs the corrective action.",
-    "**Phase C: Verification** - Visual re-scan generates an Immutable Audit Trail."
-])
 
-# 5. Call to Action for Judges
-if st.button("Launch Prototype (Phase 1 Demo)"):
+# We use columns to create a visual "step" effect
+s1, s2, s3 = st.columns(3)
+
+with s1:
+    st.markdown("#### Phase A")
+    st.warning("**Detection**")
+    st.caption("AI identifies sub-millimeter configuration errors.")
+
+with s2:
+    st.markdown("#### Phase B")
+    st.warning("**Intervention**")
+    st.caption("Mechanic performs and logs the corrective action.")
+
+with s3:
+    st.markdown("#### Phase C")
+    st.success("**Verification**")
+    st.caption("Visual re-scan generates an Immutable Audit Trail.")
     st.success("Redirecting to verification engine... (Enabled for Offline Phase)")
