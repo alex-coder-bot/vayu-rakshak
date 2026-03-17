@@ -1,2 +1,27 @@
-# vayu-rakshak
-Vayu Rakshak: An AI-driven 'Proof-of-Fix' protocol for aviation safety, ensuring mechanical integrity through closed-loop visual verification.
+# 🛡️ Vayu Rakshak (Project AeroScan)
+**The 'Proof-of-Fix' Protocol for Zero-Error Aviation Maintenance.**
+
+## ✈️ The Vision
+Vayu Rakshak replaces "Checklist Culture" with "Vision-Verified Safety." Inspired by the 2025 Air India tragedy, this system ensures that safety-critical components are not just signed off, but physically verified by AI.
+
+## ✨ Key Features
+* **Closed-Loop Verification:** Reports remain locked until AI confirms mechanical integrity.
+* **Sutra UI Philosophy:** A linear, tactile interface designed for high-stress hangar environments.
+* **Edge-Inference Architecture:** Designed to run locally on handheld devices (No internet required in hangars).
+
+## 🛠️ Tech Stack
+* **Frontend:** Streamlit (Python)
+* **Vision Logic:** Custom Vision-Inference Pipeline (Proprietary)
+* **Reporting:** Automated Immutable PDF Generation (FPDF2)
+
+## 🔒 Intellectual Property & Phase 1 Note
+This repository contains the **User Interface (UI) Shell and Workflow Logic**. 
+To protect proprietary research and comply with SkyHack 2.0 "No Pre-existing Code" build rules, the **Core Inference Engine** and **Custom Model Weights** are withheld and will be implemented during the offline hackathon phase.
+
+## 🚀 Getting Started
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/Vayu-Rakshak-Sutra.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the app: `streamlit run app.py`
+
+---
+**Developed by Tia Sharma**
