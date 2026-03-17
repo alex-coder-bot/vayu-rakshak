@@ -38,7 +38,7 @@ st.markdown(f"""
     }}
 
     /* 4. Font Sizes and Visibility */
-    h1 {{ font-size: 4rem !important; color: white !important; font-weight: 800 !important; }}
+    h1 {{ font-size: 10rem !important; color: white !important; font-weight: 800 !important; }}
     h3 {{ font-size: 2.5rem !important; color: #ffffff !important; }}
     p, .stCaption {{ font-size: 1.2rem !important; color: #f0f0f0 !important; }}
     
@@ -51,7 +51,6 @@ st.markdown(f"""
     """, unsafe_allow_html=True)
 # Add a professional banner in the sidebar
 with st.sidebar:
-    st.image("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=300", caption="Vayu Rakshak v1.0")
     st.divider()
     st.markdown("### 🛠️ Status: **Ready for Field Test**")
 
