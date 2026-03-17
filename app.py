@@ -6,16 +6,24 @@ st.set_page_config(page_title="Vayu Rakshak | AI Aviation Safety", page_icon="ðŸ
 # Custom CSS for that "Popping" effect
 st.markdown("""
     <style>
-    .main {
-        background-color: #f5f7f9;
-    }
-    .stButton>button {
-        width: 100%;
-        border-radius: 20px;
-        height: 3em;
-        background-color: #007bff;
+    /* Main background gradient */
+    .stApp {
+        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
         color: white;
-        font-weight: bold;
+    }
+    
+    /* Making cards semi-transparent for a "Glassmorphism" effect */
+    div[data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlockBorderControl"] {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    /* Fixing text colors for the dark background */
+    h1, h2, h3, p, b, .stCaption {
+        color: #e0e0e0 !important;
     }
     </style>
     """, unsafe_allow_html=True)
