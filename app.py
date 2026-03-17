@@ -25,7 +25,7 @@ st.markdown(f"""
     
     /* 2. Force Wide Layout and fix scrolling */
     .block-container {{
-        padding-top: 1.2rem !important;
+        padding-top: 1rem !important;
         max-width: 95% !important;
     }}
 
