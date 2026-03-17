@@ -38,8 +38,8 @@ st.markdown(f"""
     }}
 
     /* 4. Font Sizes and Visibility */
-    h1 {{ font-size: 10rem !important; color: white !important; font-weight: 800 !important; }}
-    h3 {{ font-size: 2.5rem !important; color: #ffffff !important; }}
+    h1 {{ font-size: 5rem !important; color: white !important; font-weight: 800 !important; }}
+    h3 {{ font-size: 4rem !important; color: #ffffff !important; }}
     p, .stCaption {{ font-size: 1.2rem !important; color: #f0f0f0 !important; }}
     
     /* Ensuring the sidebar stays professional */
