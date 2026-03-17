@@ -89,7 +89,7 @@ st.info("Our proprietary 3-Phase verification process:")
 s1, s2, s3 = st.columns(3)
 
 with s1:
-    st.markdown("#### Phase A")
+    st.markdown("#### :white[Phase A]")         
     st.warning("**Detection**")
     st.caption("AI identifies sub-millimeter configuration errors.")
 
