@@ -1,5 +1,5 @@
 import streamlit as st
-
+from PIL import Image  # Capital PIL, even though the library is called Pillow
 # 1. Page Configuration
 st.set_page_config(page_title="Vayu Rakshak | AI Aviation Safety", page_icon="🛡️", layout="wide")
 
