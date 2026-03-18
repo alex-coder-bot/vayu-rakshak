@@ -23,7 +23,7 @@ To protect proprietary research and comply with SkyHack 2.0 "No Pre-existing Cod
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the app: `streamlit run app.py`
 
-## Streamlit APP
+## 📱Streamlit APP
 https://vayu-rakshak-ah5x2hwdncwuuen6gldhx9.streamlit.app/
 ---
 **Developed by Tia Sharma**
