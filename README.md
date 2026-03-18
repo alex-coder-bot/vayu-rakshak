@@ -1,4 +1,4 @@
-# 🛡️ Vayu Rakshak (Project AeroScan)
+# 🛡️ Vayu Rakshak 
 **The 'Proof-of-Fix' Protocol for Zero-Error Aviation Maintenance.**
 
 ## ✈️ The Vision
